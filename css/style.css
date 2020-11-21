@@ -594,6 +594,8 @@ body {
 .hotel-info__offer {
   margin-left: 14px;
   margin-top: 4px;
+  font-family: Mulish;
+  font-weight: 600;
 }
 
 .hotel-info__name {
@@ -623,7 +625,7 @@ body {
 
 .hotel-description {
   height: 15px;
-  font-family: Muli;
+  font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
 }
@@ -652,13 +654,13 @@ body {
 }
 
 .rating__text {
-  font-family: Muli;
+  font-family: Mulish;
   font-size: 8px;
   font-weight: 600;
 }
 
 .rating__counter {
-  font-family: Muli;
+  font-family: Mulish;
   font-size: 14px;
   font-weight: 700;
 }
