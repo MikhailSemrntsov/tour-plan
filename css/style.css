@@ -710,6 +710,7 @@ body {
 .slider-button__next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
+  border: none;
 }
 
 .slider-button__prev {
