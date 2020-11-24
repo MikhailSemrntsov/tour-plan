@@ -710,12 +710,13 @@ body {
 .slider-button__next {
   right: 18px;
   background-image: url(../img/arrow-next.svg);
-  border: none;
+  outline: none;
 }
 
 .slider-button__prev {
   left: 18px;
   background-image: url(../img/arrow-prev.svg);
+  outline: none;
 }
 
 @media (max-width: 1200px) {
