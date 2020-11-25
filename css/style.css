@@ -395,7 +395,7 @@ body {
 .navbar-menu {
   list-style-type: none;
   margin: 0;
-  padding: 19px 0;
+  padding: 16px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,7 +575,7 @@ body {
 }
 
 .hotel {
-  padding-top: 23px;
+  padding-top: 20px;
   padding-bottom: 70px;
 }
 
@@ -605,7 +605,7 @@ body {
 }
 
 .hotel-info__description {
-  margin: 5px 0;
+  margin: 0;
 }
 
 .hotel-name {
