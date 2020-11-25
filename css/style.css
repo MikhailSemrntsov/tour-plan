@@ -688,6 +688,12 @@ body {
   font-weight: 700;
 }
 
+.rating__counter-5 {
+  font-family: Mulish;
+  font-size: 10px;
+  font-weight: 700;
+}
+
 .swiper-container {
   width: 100%;
   height: 100%;
