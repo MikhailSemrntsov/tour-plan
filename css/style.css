@@ -443,7 +443,7 @@ body {
 }
 
 .user-bottom .user__name {
-  margin-top: 10px;
+  margin-top: 11px;
   margin-bottom: 27px;
   margin-left: 0px;
   color: #ffffff;
@@ -781,9 +781,12 @@ body {
 .booking__start {
   font-size: 10px;
   font-weight: 400;
+  height: 14px;
+  margin-top: 3px;
 }
 
 .booking__price-teg {
+  height: 33px;
   font-size: 24px;
   font-weight: 800;
 }
@@ -830,7 +833,7 @@ body {
 
 .booking__heading {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .booking__number {
@@ -904,10 +907,10 @@ body {
     padding-bottom: 30px;
   }
   .navbar__search {
-    margin-left: auto;
+    margin-left: 47px;
   }
   .navbar-menu {
-    padding: 16px 0;
+    padding: 12px 0;
   }
   .navbar-menu__link {
     font-size: 12px;
