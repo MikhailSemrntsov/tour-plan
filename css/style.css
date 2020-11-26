@@ -907,8 +907,7 @@ body {
     margin-left: auto;
   }
   .navbar-menu {
-    padding-top: 22px;
-    padding-bottom: 22px;
+    padding: 16px 0;
   }
   .navbar-menu__link {
     font-size: 12px;
