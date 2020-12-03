@@ -419,6 +419,7 @@
   .footer
     &-wrapper
       grid-row-gap: 26px
+      grid-column-gap: 0
     &__logo
       width: 94px
     &__social
@@ -452,25 +453,39 @@
       margin: 0 0 15px 0
       &--mb-3
         margin-top: 16px
+      &--mb-message
+        padding-top: 16px
     &__text
       margin-left: 0
       padding-top: 12px
-      letter-spacing: -1.02px
+
     &__icon
       &-wrapper
         min-width: 25px
         padding-top: 3px
         padding-left: 0px
+        margin-right: 5px
     &__item
       &--mb-2
         padding-left: 3px
-
       &--mb-email
-        padding-left: 1px
+        letter-spacing: -0.1px
         padding-top: 5px
+        margin-left: -4px
+    &__input
+      order: 1
+    &__message
+      order: 2
+      margin-bottom: 15px
+    &__button
+      order: 4
+      margin-top: 15px
+    &__info
+      order: 3
+      flex-basis: 100%
   .disclaimer
     &__list
-      padding-right: 7px
+      padding-right: 5px
 @media  ( max-width: 320px )
   .navbar
     &__bottom

@@ -2080,6 +2080,7 @@ body {
   }
   .footer-wrapper {
     grid-row-gap: 26px;
+    grid-column-gap: 0;
   }
   .footer__logo {
     width: 94px;
@@ -2136,18 +2137,53 @@ body {
   .footer__title--mb-3 {
     margin-top: 16px;
   }
+  .footer__title--mb-message {
+    padding-top: 16px;
+  }
   .footer__text {
     margin-left: 0;
     padding-top: 12px;
-    letter-spacing: -1.02px;
   }
   .footer__icon-wrapper {
     min-width: 25px;
     padding-top: 3px;
     padding-left: 0px;
+    margin-right: 5px;
+  }
+  .footer__item--mb-2 {
+    padding-left: 3px;
+  }
+  .footer__item--mb-email {
+    letter-spacing: -0.1px;
+    padding-top: 5px;
+    margin-left: -4px;
+  }
+  .footer__input {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .footer__message {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 15px;
+  }
+  .footer__button {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
+    margin-top: 15px;
+  }
+  .footer__info {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
   .disclaimer__list {
-    padding-right: 7px;
+    padding-right: 5px;
   }
 }
 
