@@ -12,6 +12,7 @@
   .card
     width: 230px
     height: 230px
+
   .footer
     &__input
       flex-basis: 100%
@@ -85,7 +86,7 @@
         &--next
           right: 0
   .activities
-    padding: 44px 0 0px 0
+    padding: 44px 0 48px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -94,6 +95,7 @@
     width: 340px
     height: 256px
   .footer
+    padding-top: 70px
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
@@ -102,19 +104,46 @@
     &__logo
       grid-row: 1/2
       grid-column: span 2
+      width: 99px
+    &__title
 
+      &--mb-3
+        margin-top: 21px
+        margin-left: 0px
+
+      &--mb-message
+        padding-left: 0px
     &__social
       &-network
         grid-row: 1/2
         grid-column: span 4
         align-self: center
+        padding-left: 9px
+
+        padding-top: 18px
+        margin-left: -61px
     &__catigories
       grid-row: 2/3
       grid-column: span 2
+      padding-left: 0px
+      padding-top: 9px
+    &__ul
+      &--aditional
+        margin-left: -43px
+        margin-top: -2px
+    &__list
+      grid-row: 2/3
+      grid-column: span 2
+      &--information
+        padding-left: 18px
+        padding-top: 9px
     &__legal
       grid-column: span 2
     &__aditional
+      min-width: 247px
       grid-column: span 6
+      margin-top: 10px
+      margin-left: -39px
     &__contact
       &-details
         grid-column: span 5
@@ -122,11 +151,24 @@
       &-form
         grid-column: span 5
         grid-row: 4
+        max-width: 540px
+    &__text
+      margin-left: 1px
+    &__item
+      &--mb-2
+        padding-left: 6px
+      &--mb-email
+        padding-left: 4px
+    &__form
+      padding-left: 0px
+      padding-top: 2px
   .disclaimer
-    padding-left: 0
+    padding-left: 1px
+    padding-top: 60px
     padding-right: 0
     &__ul
       padding-left: 0
+
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -218,6 +260,14 @@
   .footer
     &__input
       flex-basis: 100%
+    &__aditional
+      width: 100%
+      margin-left: 0
+    &__ul
+      &--aditional
+        margin-left: 0
+    &__input
+      max-width: 100%
   .disclaimer
     padding-top: 30px
 @media ( max-width: 576px)
@@ -246,12 +296,18 @@
       &-network
         grid-row: 2
         grid-column: 1
+        margin-left: 0
+        padding-left: 0
     &__aditional
       grid-row: 3
       grid-column: 1
     &__catigories
       grid-row: 4
       grid-column: 1
+    &__list
+      grid-row: auto
+      &--information
+        padding-left: 0
     &__legal
       grid-row: 5
       grid-column: 1
@@ -348,9 +404,11 @@
         margin-left: -90px
         margin-right: -87px
   .activities
+    padding: 44px 0 42px 0
     &-title
       font-size: 18px
       margin-bottom: 31px
+
   .card
     &:nth-child(2)
       order: 2
@@ -358,6 +416,58 @@
       order: 3
     &:nth-child(3)
       margin-bottom: 28px
+  .footer
+    &-wrapper
+      grid-row-gap: 26px
+    &__logo
+      width: 94px
+    &__social
+      &-network
+        display: flex
+        flex-direction: column
+        min-height: 86px
+        align-items: stretch
+      &-links
+        margin-top: 7px
+        justify-content: start
+    &__link
+      margin-right: 12px
+    &__list
+      &--information
+        grid-column: 1
+        grid-row: 3
+        padding-top: 2px
+    &__catigories
+      grid-column: 1
+      grid-row: 5
+      padding-top: 6px
+    &__aditional
+      grid-column: 1
+      grid-row: 4
+    &__ul
+      &--aditional
+        padding-left: 0
+        margin-top: 18px
+    &__title
+      margin: 0 0 15px 0
+      &--mb-3
+        margin-top: 16px
+    &__text
+      margin-left: 0
+      padding-top: 12px
+      letter-spacing: -1.02px
+    &__icon
+      &-wrapper
+        min-width: 25px
+        padding-top: 3px
+        padding-left: 0px
+    &__item
+      &--mb-2
+        padding-left: 3px
+
+      &--mb-email
+        padding-left: 1px
+        padding-top: 5px
   .disclaimer
     &__list
       padding-right: 7px
