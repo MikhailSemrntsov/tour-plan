@@ -29,7 +29,7 @@ var reviewsSlider = new Swiper('.reviews-slider', {
 
 var menuButton = document.querySelector(".menu-button");
 menuButton.addEventListener("click", function (){
-  console.log("клик по кнопке меню");
+  // console.log("клик по кнопке меню");
   document
   .querySelector(".navbar__bottom")
   .classList.toggle("navbar__bottom--visible");

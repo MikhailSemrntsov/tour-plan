@@ -30,12 +30,9 @@
       margin-left: 47px
 
     &-menu
-      padding: 12px 0
+      padding: 22px 0
       justify-content: space-around
-      &__items:nth-child(3)
-        margin-top: 37px
-      &__items
-        margin-bottom: 17px
+
       &__link
         font-size: 12px
         line-height: 15px
@@ -205,10 +202,16 @@
       bottom: 0
       top: 78px
       padding-top: 30px
+      overflow: auto
       &--visible
         display: block
     &-menu
+      padding: 16px 0
       flex-direction: column
+      &__items:nth-child(3)
+        margin-top: 37px
+      &__items
+        margin-bottom: 17px
       &__item
         margin-bottom: 20px
       &--mobile
@@ -226,7 +229,7 @@
       border: none
       background-color: #ffffff
       cursor: pointer
-
+      outline: none
       &__line
         width: 16px
         height: 1px
