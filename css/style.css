@@ -1036,7 +1036,7 @@ body {
   height: 100%;
   border: none;
   padding: 0 75px 0 33px;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: 300;
   font-size: 14px;
@@ -1239,7 +1239,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   padding-left: 3px;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -1430,7 +1430,7 @@ body {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-family: Mulish;
+  font-family: Mulish, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
