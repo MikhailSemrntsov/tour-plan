@@ -808,6 +808,11 @@ body {
   outline: none;
 }
 
+.back-input {
+  cursor: pointer;
+  margin-top: 20px;
+}
+
 .map {
   width: 347px;
   height: 213px;
@@ -1174,9 +1179,9 @@ body {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .footer__catigories {
@@ -1298,6 +1303,7 @@ body {
   font-size: 14px;
   line-height: 160%;
   color: #BDBDBD;
+  text-decoration: none;
 }
 
 .footer__item--mb-2 {
@@ -1306,6 +1312,14 @@ body {
 
 .footer__item--mb-email {
   margin-bottom: 22px;
+}
+
+.footer--email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #BDBDBD;
 }
 
 .footer__icon-wrapper {
@@ -1631,6 +1645,9 @@ body {
     height: 210px;
     padding: 25px 22px;
   }
+  .modal__dialog--visible {
+    padding: 33px 50px;
+  }
   .map {
     width: 340px;
     height: 210px;
@@ -1929,6 +1946,9 @@ body {
   .booking__button {
     width: 100%;
   }
+  .modal__dialog--visible {
+    padding: 33px 33px;
+  }
   .map {
     width: 100%;
   }
@@ -1976,7 +1996,7 @@ body {
         flex-basis: 100%;
   }
   .footer__aditional {
-    width: 100%;
+    min-width: 100%;
     margin-left: 0;
   }
   .footer__ul--aditional {
@@ -1999,6 +2019,10 @@ body {
   }
   .hotel-slider {
     height: 250px;
+  }
+  .modal__dialog--visible {
+    width: 60%;
+    padding: 20px 20px;
   }
   .newsletter {
     padding: 76px 0 83px 0;
@@ -2104,6 +2128,10 @@ body {
   }
   .hotel-slider {
     height: 179px;
+  }
+  .modal__dialog--visible {
+    width: 80%;
+    height: 80%;
   }
   .map__iframe {
     width: 100%;
