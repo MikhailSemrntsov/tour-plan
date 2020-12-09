@@ -1,4 +1,5 @@
 .modal
+
   &__form
     display: flex
     align-items: center
@@ -9,6 +10,7 @@
     font-weight: normal
     font-size: 12px
     line-height: 15px
+
   &__overlay
     position: fixed
     right: 0
@@ -37,6 +39,8 @@
     visibility: hidden
     opacity: 0
     transition: opacity  0.5s
+    max-height: calc( 100% - 30px)
+    overflow-y: auto
     &--visible
       visibility: visible
       opacity: 1

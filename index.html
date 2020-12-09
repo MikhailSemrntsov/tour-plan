@@ -303,13 +303,18 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newsletter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newsletter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
-          <button class="subscribe__button">Send</button>
+          <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
     </section>
@@ -548,7 +553,7 @@
               alt="Logo: Best tour plan"
           /></a>
           <div class="footer__list footer__catigories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title--mb-4">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="" class="footer__link">All Deals</a>
@@ -578,7 +583,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list">
-            <h3 class="footer__title footer__aditional">
+            <h3 class="footer__title footer__aditional--mt">
               ADDITIONAL INFORMATION
             </h3>
             <ul class="footer__ul footer__ul--aditional">
@@ -664,9 +669,13 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500 <br />Tel (hotline) Monday -
-                Saturday : 52-56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday : 52-56-61-38 (08:00 am – 14:00 pm)
+                <span class="footer__item footer__item--mb-email"
+                  >Tel (business hours) : <a href="tel:#">269 1500</a> <br />Tel
+                  (hotline) Monday - Saturday :
+                  <a href="tel:#">52-56-61-38</a> (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday : <a href="tel:#">52-56-61-38</a> (08:00
+                  am – 14:00 pm)</span
+                >
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -756,7 +765,7 @@
             type="text"
             class="input modal__input"
             placeholder="Email*"
-            name="phone"
+            name="email"
           />
           <textarea
             class="modal__message"
