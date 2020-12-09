@@ -11,14 +11,31 @@ $message = $_POST['message'];
 $email = $_POST['email'];
 
 // Формирование самого письма
-$title = "Новое обращение Best Tour Plan";
-$body = "
-<h2>Новое обращение</h2>
+if (isset($_POST['messageFooter'])) {
+    $title = "Сообщение клиента";
+    $body = "
+    <h2>Новое обращение</h2>
+<b>Имя:</b> $name<br>
+<b>Телефон:</b> $phone<br>
+<b>Сообщение:</b><br>$message
+";
+} else if (isset($_POST['bookingModal'])) {
+    $title = "Бронирование номера";
+    $body = "
+    <h2>Бронирование номера</h2>
 <b>Имя:</b> $name<br>
 <b>Телефон:</b> $phone<br>
 <b>Почта:</b> $email<br><br>
 <b>Сообщение:</b><br>$message
 ";
+} else if (isset($_POST['newsletterEmail'])) {
+    $title = "Новый подписчик";
+    $body = "
+    <h2>Новый подписчик</h2>
+<b>Почта:</b> $email<br><br>
+";
+}
+
 
 // Настройки PHPMailer
 $mail = new PHPMailer\PHPMailer\PHPMailer();

@@ -1595,6 +1595,10 @@ body {
   .slider {
     max-width: 590px;
   }
+  .swiper-container {
+    margin-right: 15px;
+    border-radius: 8px;
+  }
   .hotel-slider__image {
     width: 100%;
     height: 100%;
@@ -1674,6 +1678,9 @@ body {
   }
   .modal__dialog--visible {
     padding: 33px 50px;
+  }
+  .swiper-container {
+    margin-right: 0px;
   }
   .map {
     width: 340px;
