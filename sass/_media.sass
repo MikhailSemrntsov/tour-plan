@@ -18,7 +18,8 @@
 
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 @media ( max-width: 991px )
   .container, newsletter-wrapper
     max-width: 700px
@@ -111,13 +112,19 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 47%
+      &-group
+        flex-basis: 47%
     &__logo
       grid-row: 1/2
       grid-column: span 2
       width: 99px
     &__title
+      &--mt
 
+        min-width: 247px
+        grid-column: span 6
+        margin-top: 10px
+        margin-left: -39px
       &--mb-3
         margin-top: 21px
         margin-left: 0px
@@ -151,10 +158,7 @@
     &__legal
       grid-column: span 2
     &__aditional
-      min-width: 247px
-      grid-column: span 6
-      margin-top: 10px
-      margin-left: -39px
+
     &__contact
       &-details
         grid-column: span 5
@@ -325,10 +329,12 @@
     height: 255px
   .footer
     &__input
-      flex-basis: 100%
-    &__aditional
-      min-width: 100%
-      margin-left: 0
+      &-group
+        flex-basis: 100%
+    &__title
+      &--mt
+        min-width: 100%
+        margin-left: 0
     &__ul
       &--aditional
         margin-left: 0
@@ -535,7 +541,7 @@
     &__aditional
       grid-column: 1
       grid-row: 4
-      &--mt
+      &
         padding-top: 8px
     &__ul
       &--aditional
