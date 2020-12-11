@@ -20,6 +20,7 @@
     &__input
       &-group
         flex-basis: 100%
+
 @media ( max-width: 991px )
   .container, newsletter-wrapper
     max-width: 700px
@@ -82,7 +83,7 @@
       max-width: 735px
       padding: 0 15px 0 18px
   .reviews
-    padding: 12px 0 0px 0
+    padding: 5px 0 0px 0
     &__title
       font-size: 30px
       margin-bottom: 47px
@@ -91,14 +92,16 @@
         max-width: 580px
       &__username
         margin-top: 10px
+      &__text
+        height: 135px
       &__button
-        top: 43%
+        top: 50%
         &--prev
           left: 3px
         &--next
           right: 0
   .activities
-    padding: 44px 0 48px 0
+    padding: 97px 0 48px 0
     &-wrapper
       flex-wrap: wrap
     &__card
@@ -169,6 +172,7 @@
         max-width: 540px
     &__text
       margin-left: 1px
+      margin-bottom: 22px
     &__item
       &--mb-2
         padding-left: 6px
@@ -183,6 +187,8 @@
     padding-right: 0
     &__ul
       padding-left: 0
+    &__list
+      padding-right: 6px
 
 @media ( max-width: 767px )
   // sass:
@@ -443,9 +449,6 @@
     &-top
       padding: 24px 0px 30px 0
 
-    // &__bottom
-    //   display: none
-
     &-menu
       display: flex
       flex-direction: column
@@ -463,15 +466,7 @@
   .breadcrumb
     &-list
       padding: 18px 0 19px 0
-  // .user-bottom
-  //   display: flex
-  //   flex-direction: column
-  //   align-items: center
-  //   &__name
-  //     margin-left: 0px
-  // .search-bottom
-  //   padding-bottom: 20px
-  //   display: flex
+
   .slider
     min-height: 210px
   .newsletter
@@ -492,8 +487,10 @@
       font-size: 18px
       max-width: 245px
       line-height: 23px
-      margin: 29px auto 42px
+      margin: 36px auto 42px
     &-slider
+      &__text
+        height: 281px
       &__button--prev
         margin-left: -90px
       &__button--next
@@ -524,8 +521,9 @@
         flex-direction: column
         min-height: 86px
         align-items: stretch
+        padding-top: 15px
       &-links
-        margin-top: 7px
+        margin-top: 4px
         justify-content: start
     &__link
       margin-right: 12px
@@ -537,7 +535,7 @@
     &__catigories
       grid-column: 1
       grid-row: 5
-      padding-top: 6px
+      padding-top: 3px
     &__aditional
       grid-column: 1
       grid-row: 4
@@ -548,13 +546,13 @@
         padding-left: 0
         margin-top: 18px
     &__title
-      margin: -4px 0 15px 0
+      margin: 0px 0 15px 0
       &--mb-4
-        margin-bottom: 19px
+        margin-bottom: 20px
       &--mb-3
         margin-top: 16px
       &--mb-message
-        padding-top: 16px
+        padding-top: 13px
         margin-bottom: 13px
         margin-top: 1px
     &__text
@@ -564,7 +562,7 @@
     &__icon
       &-wrapper
         min-width: 25px
-        padding-top: 3px
+        padding-top: 5px
         padding-left: 0px
         margin-right: 5px
     &__item
@@ -587,12 +585,99 @@
       flex-basis: 100%
   .disclaimer
     &__list
-      padding-right: 5px
-@media  ( max-width: 320px )
-  // .navbar
-  //   &__bottom
-  //     // // display: block !important
-  //     // padding-top: 22px
-  //     // padding-bottom: 68px
-  //     // max-width: 100%
-  //     // height: auto
+      padding-right: 1px
+
+//  ховер эффекты
+@media ( min-width: 992px )
+  .search
+    &__button
+      &:hover
+        background-color: $dark
+  .booking
+    &__button
+      &:hover
+        background-color: #f2f6fa
+        color: #ec1f46
+  .navbar
+    &-top
+      a
+        &:hover
+          -webkit-transform: scale(1.1,1.1)
+          -webkit-transition-timing-function: ease-out
+          -webkit-transition-duration: 250ms
+          -moz-transform: scale(1.1,1.1)
+          -moz-transition-timing-function: ease-out
+          -moz-transition-duration: 250ms
+    &-menu
+      &__items
+        &:hover
+          background-color: #f2f6fa
+          border-radius: 4px
+      &__link
+        &:hover
+          color: $dark
+  .subscribe
+    &__button
+      &:hover
+        background-color: #f2f6fa
+        color: #ec1f46
+  .card
+    &__button
+      &:hover
+        background-color: #f2f6fa
+        color: #ec1f46
+  .footer
+    &__button
+      &:hover
+        background-color: #f2f6fa
+        color: #ec1f46
+    &__logo
+      &:hover
+        -webkit-transform: scale(1.1,1.1)
+        -webkit-transition-timing-function: ease-out
+        -webkit-transition-duration: 250ms
+        -moz-transform: scale(1.1,1.1)
+        -moz-transition-timing-function: ease-out
+        -moz-transition-duration: 250ms
+
+    &__social
+      &-links
+        img
+          &:hover
+            -webkit-transform: scale(1.5,1.5)
+            -webkit-transition-timing-function: ease-out
+            -webkit-transition-duration: 250ms
+            -moz-transform: scale(1.5,1.5)
+            -moz-transition-timing-function: ease-out
+            -moz-transition-duration: 250ms
+    &__item
+      a
+        &:hover
+          background-color: #f2f6fa
+          border-radius: 4px
+          collor: $dark
+      &--mb-email
+        a
+          &:hover
+            background-color: #fff
+            border-radius: 4px
+            color: $dark
+      &--mb-2
+        a
+          &:hover
+
+            background-color: #fff
+            border-radius: 4px
+            color: $dark
+  .disclaimer
+    &__list
+      a
+        &:hover
+          background-color: #fff
+          border-radius: 4px
+          color: $dark
+  .modal
+    &__button
+      &:hover
+        background-color: #f2f6fa
+        color: $dark

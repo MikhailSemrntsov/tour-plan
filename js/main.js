@@ -66,41 +66,26 @@ function closeModal(event) {
   body.removeClass('body-overflow');
 };
 
-// обработка форм
+// Oбработка форм
   $(".form").each(function() {
     $(this).validate({
-    errorClass: "invalid",
-    messages: {
-      name: {
-        required: "Please specify your name",
-        minlength: "the name must be at least 2 letters",
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "the name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        phone: {
+          required: "please specify your phone number",
+        },
       },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      },
-      phone: {
-        required: "please specify your phone number",
-      },
-    },
+    });
   });
-  });
-  $('.newsletter__subscribe').validate({
-    errorClass: "invalid",
-     messages: {
-      name: {
-        required: "Please specify your name",
-        minlength: "the name must be at least 2 letters",
-      },
-      email: {
-        required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
-      },
-      phone: {
-        required: "please specify your phone number",
-      },
-    },
-  })
-  $('.phone').mask('+0 (000) 000-00-00');
+
+  $('.phone').mask('+7 (000) 000-00-00');
   AOS.init();
 });
