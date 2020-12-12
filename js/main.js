@@ -66,7 +66,7 @@ function closeModal(event) {
   body.removeClass('body-overflow');
 };
 
-// Oбработка форм
+// обработка форм
   $(".form").each(function() {
     $(this).validate({
       errorClass: "invalid",
@@ -85,7 +85,16 @@ function closeModal(event) {
       },
     });
   });
-
+  $('.newsletter__subscribe').validate({
+    errorClass: "invalid-subscribe",
+     messages: {  
+      email: {
+        required: "We need your email address to contact you",
+        email: "Your email address must be in the format of name@domain.com"
+      }
+    }
+  });
   $('.phone').mask('+7 (000) 000-00-00');
   AOS.init();
+  
 });

@@ -370,6 +370,15 @@ body {
   border-bottom: 1px solid #EC1F46;
 }
 
+.invalid-subscribe {
+  position: absolute;
+  left: 0;
+  top: 52px;
+  width: 100%;
+  color: #EC1F46;
+  border-bottom: 1px solid #EC1F46;
+}
+
 .navbar {
   background-color: #fff;
 }
@@ -1051,7 +1060,6 @@ body {
   width: 350px;
   height: 55px;
   border-radius: 4px;
-  overflow: hidden;
 }
 
 .subscribe__input {
@@ -1066,6 +1074,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   outline: none;
+  top: 0;
 }
 
 .subscribe__button {
@@ -1389,8 +1398,8 @@ body {
 
 .footer__input-group {
   margin-bottom: 15px;
-  -ms-flex-preferred-size: 48%;
-      flex-basis: 48%;
+  -ms-flex-preferred-size: 47%;
+      flex-basis: 47%;
 }
 
 .footer__message {
@@ -1432,6 +1441,16 @@ body {
   font-size: 12px;
   line-height: 15px;
   color: #E0E0E0;
+}
+
+.footer__input-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .disclaimer {
@@ -1631,8 +1650,8 @@ body {
     height: 230px;
   }
   .footer__input-group {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
+    -ms-flex-preferred-size: 47%;
+        flex-basis: 47%;
   }
 }
 
@@ -1846,6 +1865,10 @@ body {
   .footer__form {
     padding-left: 0px;
     padding-top: 2px;
+  }
+  .footer__input-block {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .disclaimer {
     padding-left: 1px;

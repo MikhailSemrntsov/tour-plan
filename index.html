@@ -337,8 +337,7 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newsletter__subscribe form"
-          data-aos="fade-left"
+          class="subscribe newsletter__subscribe"
         >
           <input
             type="email"
@@ -347,6 +346,7 @@
             name="email"
             required
           />
+
           <button
             class="subscribe__button"
             type="submit"
@@ -761,24 +761,26 @@
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="footer__form form">
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input"
-                  placeholder="Your Full Name*"
-                  name="name"
-                  required
-                />
-              </div>
-              <div class="footer__input-group">
-                <input
-                  type="text"
-                  class="input footer__input phone"
-                  placeholder="Phone Number*"
-                  name="phone"
-                  required
-                  minlength="18"
-                />
+              <div class="footer__input-block">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="18"
+                  />
+                </div>
               </div>
               <textarea
                 class="footer__message"
@@ -845,7 +847,7 @@
             required
           />
           <input
-            type="text"
+            type="tel"
             minlength="18"
             class="input modal__input phone"
             placeholder="Phone Number*"
@@ -853,7 +855,7 @@
             required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
