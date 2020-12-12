@@ -168,17 +168,19 @@
       </div>
       <!-- container -->
     </section>
-
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
           <a
             href="https://sementsovmikhail.ru/tour-plan/"
             class="logo footer__logo"
-            ><img src="./img/footer__logo.svg" alt="Logo: Best tour plan"
+            ><img
+              class="logo footer__logo"
+              src="./img/footer__logo.svg"
+              alt="Logo: Best tour plan"
           /></a>
           <div class="footer__list footer__catigories">
-            <h3 class="footer__title">ALL CATEGORIES</h3>
+            <h3 class="footer__title footer__title--mb-4">ALL CATEGORIES</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="" class="footer__link">All Deals</a>
@@ -208,7 +210,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__list">
-            <h3 class="footer__title footer__aditional">
+            <h3 class="footer__title footer__title--mt">
               ADDITIONAL INFORMATION
             </h3>
             <ul class="footer__ul footer__ul--aditional">
@@ -236,13 +238,22 @@
           <div class="footer__social-network">
             <h3 class="footer__title footer__title--inline">Social Network</h3>
             <div class="footer__social-links">
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="./img/facebook-link.svg" alt="icon:facebook"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="./img/youtobe-link.svg" alt="icon:youtobe"
               /></a>
-              <a href="#" class="footer__link"
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="footer__link"
                 ><img src="./img/instagramm-link.svg" alt="icon:instagramm"
               /></a>
             </div>
@@ -294,9 +305,13 @@
                   />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500 <br />Tel (hotline) Monday -
-                Saturday : 52-56-61-38 (08:00 am – 20:00 pm)<br />
-                Tel (hotline) Sunday : 52-56-61-38 (08:00 am – 14:00 pm)
+                <span class="footer__item footer__item--mb-email"
+                  >Tel (business hours) : <a href="tel:#">269 1500</a> <br />Tel
+                  (hotline) Monday-Saturday :
+                  <a href="tel:#">52-56-61-38</a> (08:00 am – 20:00 pm)<br />
+                  Tel (hotline) Sunday : <a href="tel:#">52-56-61-38</a> (08:00
+                  am – 14:00 pm)</span
+                >
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
@@ -306,7 +321,11 @@
                     alt="icon: email"
                   />
                 </div>
-                cherly.lawson@example.com
+                <a
+                  class="footer__item footer__item--email"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -315,25 +334,40 @@
             <h3 class="footer__title footer__title--mb-message">
               Send us a message
             </h3>
-            <form action="send.php" method="POST" class="footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+            <form action="send.php" method="POST" class="footer__form form">
+              <div class="footer__input-block">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input phone"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                    minlength="18"
+                  />
+                </div>
+              </div>
               <textarea
                 class="footer__message"
                 placeholder="Message"
                 name="message"
               ></textarea>
-              <button class="button footer__button" type="submit">Send</button>
+              <button
+                class="button footer__button"
+                type="submit"
+                name="messageFooter"
+              >
+                Send
+              </button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -343,9 +377,21 @@
         <div class="disclaimer">
           <div class="disclaimer__info">
             <ul class="disclaimer__ul">
-              <li class="disclaimer__list">Disclaimer</li>
-              <li class="disclaimer__list">Conditions of use</li>
-              <li class="disclaimer__list">Cancellation policy</li>
+              <li class="disclaimer__list">
+                <a class="disclaimer__list disclaimer__list--link" href="#"
+                  >Disclaimer</a
+                >
+              </li>
+              <li class="disclaimer__list">
+                <a class="disclaimer__list disclaimer__list--link" href="#"
+                  >Conditions of use</a
+                >
+              </li>
+              <li class="disclaimer__list">
+                <a class="disclaimer__list disclaimer__list--link" href="#"
+                  >Cancellation policy</a
+                >
+              </li>
             </ul>
           </div>
           <!-- /.disclaimer-info -->
@@ -357,7 +403,63 @@
       </div>
       <!-- /.container -->
     </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="./img/icon-close.svg" alt="icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-message">booking</h3>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            minlength="2"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+          />
+          <input
+            type="tel"
+            minlength="18"
+            class="input modal__input phone"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="modal__message"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+
+          <button
+            class="button modal__button"
+            name="bookingModal"
+            type="submit"
+          >
+            Send
+          </button>
+
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
