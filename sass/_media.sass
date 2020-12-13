@@ -216,6 +216,7 @@
           display: none
         &--visible
           display: flex
+          margin-left: auto
     &__user
       flex-direction: column
       justify-content: center
@@ -429,6 +430,14 @@
       min-height: 440px
     &-slider
       height: 179px
+      &__button
+        width: 7px
+        height: 7px
+        background-size: contain
+        &--next
+          right: 10px
+        &--prev
+          left: 7px
   .modal
     &__dialog
       &--visible
@@ -597,10 +606,21 @@
       &:hover
         background-color: $dark
   .booking
+    &__num
+      &:hover
+        background-color: #f2f6fa
+        color: $dark
+        border-radius: 4px
     &__button
       &:hover
         background-color: #f2f6fa
         color: #ec1f46
+  .back-input
+    &:hover
+      background-color: #ec1f46
+      color: $dark
+      border-radius: 4px
+
   .navbar
     &-top
       a
